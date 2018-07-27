@@ -132,7 +132,7 @@ if(session.getAttribute("username")!=null){
 	<div class="container">
 		<h1>두번째 시연 영상</h1>
 		<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-reponsive-item" src="https://www.youtube.com/embed/d9IxdwEFk1c"></iframe>	<!-- 3mPO814jiUw 는 유튜브 영상 아이디 값 -->
+				<iframe class="embed-reponsive-item" src="https://www.youtube.com/embed/_I3RjQi56q4"></iframe>	<!-- 3mPO814jiUw 는 유튜브 영상 아이디 값 -->
 		</div>
 	</div>	
 	<hr>
