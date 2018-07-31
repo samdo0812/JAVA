@@ -71,7 +71,7 @@ if(session.getAttribute("username")!=null){
               <a class="nav-link" href="./main.dron">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="btn();">Dron demonstration video</a>
+              <a class="nav-link" href="#" onclick="btn();">Drone demonstration video</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" onclick="btn2();" >Production process</a> <!-- 제작 과정 -->

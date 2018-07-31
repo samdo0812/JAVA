@@ -86,7 +86,7 @@ int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지
               <a class="nav-link" href="./main.dron">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="btn();">product descriptions</a> <!-- 제품 소개 -->
+              <a class="nav-link" href="#" onclick="btn();">Drone demonstration video</a> <!-- 제품 소개 -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" onclick="btn2();" >Production process</a> <!-- 제작 과정 -->
@@ -124,7 +124,7 @@ int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h1>조미정</h1>
-              <span class="subheading">AI IOT DRON WEB</span>
+              <span class="subheading">AI IOT DRONE WEB</span>
             </div>
           </div>
         </div>
@@ -218,7 +218,9 @@ int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지
 <hr/>
 <div class="container">
 <tfooter>
+<%if(username!=null && username.equals("admin")){ %> 
 <a class="btn btn-default pull-right" href="./BoardWrite.bo">글쓰기</a>
+ <%} %> 
 </tfooter>
 </div>
 <!-- ---------------------------------------------------------------------------------------------- -->

@@ -5,6 +5,14 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR" %> 
 <%BoardBean board = (BoardBean)request.getAttribute("boarddata"); %>
 
+<% 
+String username=null; 
+if(session.getAttribute("username")!=null){ 
+	username=(String)session.getAttribute("username"); 
+} 
+%>
+
+
 <html lang="en">
 
   <head>
@@ -105,7 +113,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h1>조미정</h1>
-              <span class="subheading">AI IOT DRON WEB</span>
+              <span class="subheading">AI IOT DRONE WEB</span>
             </div>
           </div>
         </div>
@@ -140,7 +148,7 @@
             <div align="center">내 용</div> 
         </td> 
         <td style="font-family:돋움; font-size:12">
-	        <textarea style="width: 100%; height: 250px"><%=board.getBOARD_CONTENT()%></textarea>    
+	        <label style="width: 100%; height: 250px"><%=board.getBOARD_CONTENT()%></label>    
         </td> 
     </tr> 
     <tr> 
@@ -161,8 +169,10 @@
         <td colspan="5"> 
             <font size=2> 
                 <%-- <a href="./BoardReplyAction.bo?num=<%=board.getBOARD_NUM() %>">[답변]</a>  --%>
+               <%if(username!=null && username.equals("admin")){ %> 
                 <a href="./BoardModify.bo?num=<%=board.getBOARD_NUM() %>">[수정]</a>                 
                 <a href="./BoardDelete.bo?num=<%=board.getBOARD_NUM() %>">[삭제]</a> 
+                <%} %> 
                 <a href="./BoardList.bo">[목록]</a>                 
             </font> 
         </td> 

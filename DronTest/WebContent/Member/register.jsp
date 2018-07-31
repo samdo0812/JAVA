@@ -23,7 +23,8 @@
 
     <!-- Custom styles for this template -->
     <link href="./Resources/css/clean-blog.min.css" rel="stylesheet">
-	<script>
+	
+<script>
 		function btn() {
 			<%if(session.getAttribute("username") == null) { %>
 			alert('로그인 해주세요');
@@ -45,6 +46,12 @@
 		
 </script>
 
+<script> 
+
+</script>
+
+
+
   </head>
 
   <body>
@@ -63,13 +70,12 @@
               <a class="nav-link" href="./main.dron">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="btn();">Dron demonstration video</a> <!-- 제품 소개 -->
+              <a class="nav-link" href="#" onclick="btn();">Drone demonstration video</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" onclick="btn2();" >Production process</a> <!-- 제작 과정 -->
             </li>
-            
-            <%if(session.getAttribute("username")==null) { %>
+             <%if(session.getAttribute("username")==null) { %>
              <li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          			 Connection
@@ -97,13 +103,13 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('./Resources/img/register.jpg')">
+    <header class="masthead" style="background-image: url('./Resources/img/regi.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="page-heading">
-              <h1>회원가입</h1>
+               <h1>회원가입</h1>
               <span class="subheading">회원가입을 하시면 시연 영상 및 제작과정을 보실 수 있습니다.</span>
             </div>
           </div>
@@ -112,58 +118,56 @@
     </header>
 
     <!-- Main Content -->
+   
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Let's go to the dron, the core item of the Fourth Industrial Revolution.<br>
+    <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+     <p>Let's go to the drone, the core item of the Fourth Industrial Revolution.<br>
           With 조미정
-          </p>
-          <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
-          <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
-          <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-          <form name="sentMessage" id="contactForm" action="./MemberJoinAction.dron" method="post" novalidate >
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Name</label>
-                <input type="text" class="form-control" placeholder="Name" id="username" name="username" required data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Email Address</label>
-                <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Password</label>
-                <input type="password" class="form-control" placeholder="password" id="password"  name="password" required data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Password Check</label>
-                <input type="password" class="form-control" placeholder="passwordCheck" id="passwordCheck" name="passwordCheck" required data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="form-group">
-              
-              <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="회원가입">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+     </p>
+    <form id="register-form" action="./MemberJoinAction.dron" method="post" role="form" style="display: block;"  >
+		<div class="form-group">
+		 <div class="form-group floating-label-form-group controls">
+			<label>Name</label>
+			<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+		 </div>
+		</div>
+		
+		<div class="form-group">
+		 <div class="form-group floating-label-form-group controls">
+			<label>Email Address</label>
+			<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+		 </div>
+		</div>
+		
+		<div class="form-group">
+		 <div class="form-group floating-label-form-group controls">
+			<label>Password</label>
+			<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+		 </div>
+		</div>
+		
+		<div class="form-group">
+		 <div class="form-group floating-label-form-group controls">
+		    <label>Confirm Password</label>
+			<input type="password" name="passwordCheck" id="passwordCheck" tabindex="2" class="form-control" placeholder="Confirm Password">
+		 </div>
+		</div>
+		
+
+		<div class="form-group">
+		
+			<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="회원가입">
+		</div>
+
+	</form>
+	</div>
+	</div>
+	</div>
 
     <hr>
 
-    <!-- Footer -->
+   <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">

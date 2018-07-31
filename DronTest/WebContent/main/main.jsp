@@ -76,7 +76,7 @@ if(session.getAttribute("username")!=null){
               <a class="nav-link" href="./main.dron">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="btn();">Dron demonstration video</a> <!-- 제품 소개 -->
+              <a class="nav-link" href="#" onclick="btn();">Drone demonstration video</a> <!-- 제품 소개 -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" onclick="btn2();" >Production process</a> <!-- 제작 과정 -->
@@ -117,7 +117,7 @@ if(session.getAttribute("username")!=null){
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h1>조미정</h1>
-              <span class="subheading">AI & IOT & DRON & WEB</span>
+              <span class="subheading">AI & IOT & DRONE & WEB</span>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@ if(session.getAttribute("username")!=null){
               	PART
               <br>	
               	<li>Web Application : Front-end, Back-end</li>
-              	<li>Android Application : AI, IOT</li>
+              	<li>Android Application : AI</li>
               </p>
           </div>
           
@@ -152,7 +152,7 @@ if(session.getAttribute("username")!=null){
               	PART
               <br>	
               	<li>Web Application : Support</li>
-              	<li>Android Application : Support</li>
+              	<li>Android Application : Camera, Support</li>
              </p>
           </div>  
           <hr>
@@ -223,7 +223,7 @@ if(session.getAttribute("username")!=null){
     <script src="./Resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="./js/clean-blog.min.js"></script>
+    <script src="./Resources/js/clean-blog.min.js"></script>
 
   </body>
 

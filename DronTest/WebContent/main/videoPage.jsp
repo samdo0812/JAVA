@@ -61,6 +61,7 @@ if(session.getAttribute("username")!=null){
   <body>
 
     <!-- Navigation -->
+     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="./main.dron">3조 조미정</a>
@@ -74,19 +75,22 @@ if(session.getAttribute("username")!=null){
               <a class="nav-link" href="./main.dron">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="btn();">Dron demonstration video</a> <!-- 제품 소개 -->
+              <a class="nav-link" href="#" onclick="btn();">Drone demonstration video</a> <!-- 제품 소개 -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" onclick="btn2();" >Production process</a> <!-- 제작 과정 -->
             </li>
             
              <%if(session.getAttribute("username")==null) { %>
-             <li class="nav-item">
-				<a href="./MemberJoin.dron" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connection<span class="caret"></span></a>
-				 <ul class="dropdown-menu" style="right:auto; left:auto;">
-					<li><a href="./MemberLogin.dron">Login</a></li>
-					<li><a href="./MemberJoin.dron">register</a></li>
-				</ul>
+             <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         			 Connection
+       		    </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        			  <a class="dropdown-item" href="./MemberLogin.dron">Login</a>    			  
+                 	<div class="dropdown-divider"></div>
+          			  <a class="dropdown-item" href="./MemberJoin.dron">register</a>
+       				</div>
 			</li>
 			<% } else { %>
 			<% session.setMaxInactiveInterval(180);%>
@@ -97,8 +101,8 @@ if(session.getAttribute("username")!=null){
 							<li><a href="./MemberLogoutAction.dron">로그아웃</a></li>			
 					   </ul>
 					</li>
-				</ul>
-				<% } %>
+			</ul>
+			<% } %>
           </ul>
         </div>
       </div>
@@ -112,7 +116,7 @@ if(session.getAttribute("username")!=null){
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h1>조미정</h1>
-              <span class="subheading">AI & IOT & DRON & WEB</span>
+              <span class="subheading">AI & IOT & DRONE & WEB</span>
             </div>
           </div>
         </div>
@@ -186,15 +190,15 @@ if(session.getAttribute("username")!=null){
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./Resources/vendor/jquery/jquery.min.js"></script>
+    <script src="./Resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="./Resources/js/jqBootstrapValidation.js"></script>
+    <script src="./Resources/js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/clean-blog.min.js"></script>
+    <script src="./Resources/js/clean-blog.min.js"></script>
 
   </body>
 

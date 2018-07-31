@@ -106,7 +106,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h1>¡∂πÃ¡§</h1>
-              <span class="subheading">AI IOT DRON WEB</span>
+              <span class="subheading">AI IOT DRONE WEB</span>
             </div>
           </div>
         </div>
