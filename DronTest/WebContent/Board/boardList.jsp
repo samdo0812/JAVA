@@ -20,6 +20,11 @@ int maxpage=((Integer)request.getAttribute("maxpage")).intValue(); //최대 페이지
 int startpage=((Integer)request.getAttribute("startpage")).intValue(); //현재 페이지에 표시할 첫 페이지 수
 int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지에 표시 할 끝 페이지 수
 
+
+
+List d_boardList =(List)request.getAttribute("d_boardlist"); 
+int d_listcount=((Integer)request.getAttribute("d_listcount")).intValue(); 
+
 %>
 
 <html lang="en">
@@ -68,14 +73,19 @@ int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지
     <!-- Custom styles for this template -->
     <link href="./Resources/css/clean-blog.min.css" rel="stylesheet">
 
+	 <!-- font -->
+  <link href='http://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+  <link href="./Resources/css/customFont.css" rel='stylesheet'>
+
   </head>
+
   
   <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="./main.dron"">3조 조미정</a>
+        <a class="navbar-brand" href="./main.dron">3조 조미정</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -140,7 +150,7 @@ int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지
 <div class="container"> 
 <table class="table table-striped"> 
     <tr align="center" valign="middle"> 
-        <td colspan="4">제작 과정</td> 
+        <td colspan="4"><k1>제작 과정</k1></td> 
         <td align=right> <font size=2><span class="glyphicon glyphicon-pencil"></span>&nbsp;글 개수 : ${listcount}</font></td> 
     </tr> 
     <tr align="center" valign="middle" bordercolor="#333333"> 
@@ -178,6 +188,7 @@ int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지
             <%}else{ %> 
                     
             <%} %> 
+            
             <a href="./BoardDetailAction.bo?num=<%=bl.getBOARD_NUM() %>"> 
                 <%=bl.getBOARD_SUBJECT() %></a></div>                 
         </td>         
@@ -203,7 +214,7 @@ int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지
                     if(a==nowpage){ %>  
                         [<%=a %>]     
                <%}else{ %> 
-                <a href="./BoardList.bo?page=<%=a %>">[<%=a%>]</a>&nbsp; 
+                <a href="./BoardList.bo?page=<%=a %>">[<%=a%>]</a>&nbsp;
                 <%} %> 
              <%} %>  
               
@@ -223,6 +234,103 @@ int endpage=((Integer)request.getAttribute("endpage")).intValue(); //현제 페이지
  <%} %> 
 </tfooter>
 </div>
+
+
+<!-- 관리자 모드 -->
+<%if(username!=null && username.equals("admin")){ %> 
+
+<div class="container"> 
+<table class="table table-striped"> 
+    <tr align="center" valign="middle"> 
+        <td colspan="4"><k1>휴지통</td> 
+        <td align=right> <font size=2><span class="glyphicon glyphicon-pencil"></span>&nbsp;글 개수 : ${d_listcount}</font></td> 
+    </tr> 
+    <tr align="center" valign="middle" bordercolor="#333333"> 
+        <td style="font-family:Tahoma;font-size:8pt" width="8%" height="26"> 
+            <div align="center"> 번호</div> 
+        </td> 
+        <td style="font-family:Tahoma;font-size:8pt" width="50%"> 
+            <div align="center"> 제목</div> 
+        </td> 
+        <td style="font-family:Tahoma;font-size:8pt" width="14%"> 
+            <div align="center"> 작성자</div> 
+        </td> 
+        <td style="font-family:Tahoma;font-size:8pt" width="17%"> 
+            <div align="center"> 날짜</div> 
+        </td> 
+        <td style="font-family:Tahoma;font-size:8pt" width="11%"> 
+            <div align="center"> 조회수</div> 
+        </td>                 
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    <% 
+        for(int i=0 ; i<d_boardList.size() ; i++){ 
+            BoardBean bl2=(BoardBean)d_boardList.get(i);                     
+    %> 
+    
+    <tr align="center" valign="middle" bordercolor="#333333"  
+        onmouseover="this.style.backgroundColor='f8f8f8'" onmouseout="this.style.backgroundColor=''"> 
+        <td height="23" style="font-family:Tahoma;font-size:10pt"><%=bl2.getBOARD_NUM() %></td> 
+        <td style="font-family:tahoma;font-size:10pt"> 
+            <div align="left"> 
+            <%if(bl2.getBOARD_RE_LEV()!=0){ %> 
+                <%for(int a=0 ; a<=bl2.getBOARD_RE_LEV()*2 ; a++){ %> 
+                    &nbsp;
+                <%} %> 
+                    ▶ 
+            <%}else{ %> 
+                    
+            <%} %> 
+            
+            <a href="./DeleteDetailAction.bo?num=<%=bl2.getBOARD_NUM() %>">
+                <%=bl2.getBOARD_SUBJECT() %></a></div>
+        </td>         
+        <td style="font-family:Tahoma;font-size:10pt"> 
+            <div align="center"><%=bl2.getBOARD_NAME() %></div> 
+        </td> 
+        <td style="font-family:Tahoma;font-size:10pt"> 
+            <div align="center"><%=bl2.getBOARD_DATE() %></div> 
+        </td> 
+        <td style="font-family:Tahoma;font-size:10pt"> 
+            <div align="center"><%=bl2.getBOARD_READCOUNT() %></div> 
+        </td> 
+    </tr> 
+    <%} %> 
+    <tr align=center height=20> 
+        <td colspan=7 style=font-family.Tahoma, font-size:10pt> 
+            <%if(nowpage<=1){ %>    [이전] &nbsp;         
+            <%}else{ %> 
+                <a href ="./BoardList.no?page=<%=nowpage-1%>">[이전]</a>&nbsp; 
+            <%} %> 
+             
+            <%for(int a=startpage ; a<=endpage ; a++){  
+                    if(a==nowpage){ %>  
+                        [<%=a %>]     
+               <%}else{ %> 
+                <a href="./BoardList.bo?page=<%=a %>">[<%=a%>]</a>&nbsp; 
+                <%} %> 
+             <%} %>  
+              
+             <%if(nowpage>=maxpage){ %> [다음] 
+            <%}else{ %> 
+                <a href ="./BoardList.bo?page=<%=nowpage+1%>">[다음]</a> 
+            <%} %>          
+        </td> 
+    </tr>
+
+ 
+</table> 
+   
+</div>
+<%} %> 
+
 <!-- ---------------------------------------------------------------------------------------------- -->
    <!-- Footer -->
     <footer>

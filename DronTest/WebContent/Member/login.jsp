@@ -31,6 +31,10 @@ if(session.getAttribute("username")!=null){
 
     <!-- Custom styles for this template -->
     <link href="./Resources/css/clean-blog.min.css" rel="stylesheet">
+    
+     <!-- font -->
+  <link href='http://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+  <link href="./Resources/css/customFont.css" rel='stylesheet'>
 <script>
 		function btn() {
 			<%if(session.getAttribute("username") == null) { %>
@@ -155,7 +159,7 @@ if(session.getAttribute("username")!=null){
 			    	<h3 class="panel-title">TEAM 조미정</h3>
 			 	</div>
 			  	<div class="panel-body">
-			    	<img src="./Resources/img/jo1.png">
+			    	<img src="./Resources/img/team.jpg">
 			    </div>
 			</div>
 		</div>
@@ -168,7 +172,7 @@ if(session.getAttribute("username")!=null){
 			  	<div class="panel-body">
 			    	<p>프로젝트 기간동안 사용할 팀의 이름과 주제를 선정하면서 하나의 결과를 도출하더라도 만족하지 않고 계속해서 진행하자는 의미로, 조(TEAM)와
 			    	 미정(未定)을 합쳐
-			    	사람의 이름과 비슷한 네이밍 센스를 가진 조 이름입니다. </p>
+			    	사람의 이름과 비슷한 네이밍 센스를 가진 조 이름입니다.</p>
 			    	
 			    </div>
 			</div>

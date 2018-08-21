@@ -62,7 +62,16 @@ public class BoardFrontController extends HttpServlet implements Servlet{
             }catch(Exception e){ 
                 e.printStackTrace(); 
             }             
-        } 
+        }
+		/*글 보기*/
+		else if(command.equals("/DeleteDetailAction.bo")){ 
+            action = new DeleteDetailAction();  
+            try{ 
+                forward = action.execute(request,  response); 
+            }catch(Exception e){ 
+                e.printStackTrace(); 
+            }             
+        }
 		/*글 수정*/
 		else if(command.equals("/BoardModify.bo")){ 
             action = new BoardModifyFormAction(); 
@@ -93,7 +102,46 @@ public class BoardFrontController extends HttpServlet implements Servlet{
             }
 		}
 		
+		/*영구 삭제*/
 		
+		else if(command.equals("/ForeverDelete.bo")){ 
+            action = new ForeverDeleteAction(); 
+            try{ 
+                forward = action.execute(request,  response); 
+            }catch(Exception e){ 
+                e.printStackTrace(); 
+            }
+		}
+		
+		/*답변*/
+		else if(command.equals("/BoardReplyAction.bo")){ 
+            action = new BoardReplyView(); 
+            try{ 
+                forward = action.execute(request,  response); 
+            }catch(Exception e){ 
+                e.printStackTrace(); 
+            }             
+		}
+		
+		/*답변 볼 때*/
+		else if(command.equals("/BoardReplyView.bo")){ 
+            action = new BoardReplyAction(); 
+            try{ 
+                forward = action.execute(request,  response); 
+            }catch(Exception e){ 
+                e.printStackTrace(); 
+            }    
+		}
+		
+		// 삭제글 복원
+		else if(command.equals("/BoardRecovery.bo")) {
+			action = new BoardRecoveryAction();
+			try {
+				forward = action.execute(request, response);
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
 		
 		
 			/*-----------------------------------커멘드---------------------------------------------------*/

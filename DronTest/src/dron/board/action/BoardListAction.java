@@ -26,6 +26,7 @@ public class BoardListAction implements Action{
 
 		BoardDAO boarddao = new BoardDAO(); 
 		List boardlist = new ArrayList(); 
+		List d_boardlist = new ArrayList();
 
 		int page=1; 
 		int limit=10; 
@@ -34,8 +35,14 @@ public class BoardListAction implements Action{
 			page=Integer.parseInt(request.getParameter("page")); 
 		} 
 
-		int listcount=boarddao.getListCount(); //총 리스트 수를 받아옴. 
-		boardlist = boarddao.getBoardList(page,limit); //리스트를 받아옴. 
+		int listcount=boarddao.getListCount(); // 기존 게시판 테이블의 전체 row 개수를 받아옴. 
+		int d_listcount = boarddao.d_getListCount(); // 삭제글 테이블에서 전체 row 개수를 가져온다.
+		
+		
+		
+		boardlist = boarddao.getBoardList(page,limit); // 기존 게시판 테이블의 전체 row 리스트를 받아옴. 
+		d_boardlist = boarddao.d_getBoardList(page, limit);
+		
 
 		//총 페이지 수. 
 		int maxpage=(int)((double)listcount/limit+0.95); //0.95를 더해서 올림 처리. 
@@ -51,7 +58,11 @@ public class BoardListAction implements Action{
 		request.setAttribute("startpage", startpage); //현재 페이지에 표시할 첫 페이지 수. 
 		request.setAttribute("endpage", endpage);     //현재 페이지에 표시할 끝 페이지 수. 
 		request.setAttribute("listcount",listcount); //글 수. 
-		request.setAttribute("boardlist", boardlist); 
+		request.setAttribute("boardlist", boardlist);
+		
+		
+		request.setAttribute("d_listcount", d_listcount);
+		request.setAttribute("d_boardlist", d_boardlist);
 
 		forward.setRedirect(false); 
 		forward.setPath("./Board/boardList.jsp"); 

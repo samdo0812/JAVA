@@ -12,10 +12,14 @@ if(session.getAttribute("username")!=null){
 
 
 
+
+
 <html lang="en">
 
- <head>
-	
+<head>
+
+
+
 <script>
 		function btn() {
 			<%if(session.getAttribute("username") == null) { %>
@@ -57,11 +61,15 @@ if(session.getAttribute("username")!=null){
 
     <!-- Custom styles for this template -->
     <link href="./Resources/css/clean-blog.min.css" rel="stylesheet">
-
+	
+  
+  <!-- font -->
+  <link href='http://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+  <link href="./Resources/css/customFont.css" rel='stylesheet'>
   </head>
   
   <body>
-
+	
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -125,59 +133,116 @@ if(session.getAttribute("username")!=null){
     </header>
 
     <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-preview">
-              <h2 class="post-title">
-               <img src="./Resources/img/kdh.png" class="img-circle"  > KIM DO HOON
-              </h2>
-              <h3 class="post-subtitle">일본어창의융합학부</h3>
-              <p>
-              	PART
-              <br>	
-              	<li>Web Application : Front-end, Back-end</li>
-              	<li>Android Application : AI</li>
-              </p>
+<!--     <div class="container">
+    	<div class="row">
+ 		<img src="./Resources/img/galaxy_s5_port_white.png">
+ 		</div>
+ 	</div> -->
+ 	<div class="container">
+        <div class="section-heading text-center">
+          <h2>The Fourth Industrial Revolution</h2>
+          <p class="text-muted">Core item drone</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="device-container">
+              <div class="device-mockup galaxy_s5 portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="./Resources/img/galaxy_s5_port_white.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-screen-smartphone text-primary"></i>
+                    <h3>Android</h3>
+                    <p class="text-muted"><k1>설명 들어갈 공간</k1></p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-camera text-primary"></i>
+                    <h3>AI</h3>
+                    <p class="text-muted"><k1>설명 들어갈 공간</k1></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-present text-primary"></i>
+                    <h3>Drone</h3>
+                    <p class="text-muted"><k1>설명 들어갈 공간</k1></p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-lock-open text-primary"></i>
+                    <h3>IOT</h3>
+                    <p class="text-muted"><k1>설명 들어갈 공간</k1></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        &nbsp&nbsp
+      </div>
+ 	
+ 	&nbsp
+ 	
+ <div class="container">
+ 	<div class="section-heading text-center">
+          <h2>Member</h2>
           <hr>
-          
-          <div class="post-preview">
-              <h2 class="post-title">
-                <img src="./Resources/img/cjb.jpg" class="img-responsive" > CHU JEONG BEOM
-              </h2>
-              <h3 class="post-subtitle">일본어창의융합학부</h3>
-             <p>
-              	PART
-              <br>	
-              	<li>Web Application : Support</li>
-              	<li>Android Application : Camera, Support</li>
-             </p>
-          </div>  
-          <hr>
-          
-    	<div class="post-preview">
-              <h2 class="post-title">
-                <img src="./Resources/img/leb.jpg" class="img-responsive" > LEE EUN BIN
-              </h2>
-              <h3 class="post-subtitle">법 경찰학부</h3>
-              <p>
-              	PART
-              <br>	
-              	<li>Web Application : Back-end</li>
-              	<li>Android Application : AI, IOT</li>
-             </p>
-          </div>  
-          <hr>
+      </div>
+ 	<div class="row">
+		<div class="col-md-4">
+			<h4 style="text-align: center;">KIM DO HOON</h4>
+			<img src="./Resources/img/kdh.png">
+			<p>
+				<li><k1>일본어창의융합학부</k1></li>
+			</p>
+		</div>
+		
+		<div class="col-md-4">
+			<h4 style="text-align: center;">CHU JEONG BEOM</h4>
+			<img src="./Resources/img/cjb.jpg">
+			<p>
+				<li><k1>일본어창의융합학부</k1></li>
+			</p>
+		</div>
+		
+		<div class="col-md-4">
+			<h4 style="text-align: center;">LEE EUN BIN</h4>
+			 <img src="./Resources/img/leb.jpg">
+			<p>
+				<li><k1>법 경찰 학부</k1></li>
+			</p>
+		</div>
+	</div>
+ </div>
+ 
+   
  
           <!-- Pager -->
+          <div class="container">
           <div class="clearfix">
             <a class="btn btn-primary float-right" href="#" onclick="btn2();">제작 과정 보기 &rarr;</a> 
           </div>
-        </div>
-      </div>
-    </div>
+          </div>
 
     <hr>
 
@@ -228,3 +293,51 @@ if(session.getAttribute("username")!=null){
   </body>
 
 </html>
+
+
+ <!-- 조원소개 -->
+<!--     <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+              <h2 class="post-title">
+               <img src="./Resources/img/kdh.png" class="img-circle"  > KIM DO HOON
+              </h2>
+              <h3 class="post-subtitle">일본어창의융합학부</h3>
+              <p>
+              	PART
+              <br>	
+              	<li>Web Application : Front-end, Back-end</li>
+              	<li>Android Application : AI</li>
+              </p>
+          </div>
+          
+          <hr>
+          
+          <div class="post-preview">
+              <h2 class="post-title">
+                <img src="./Resources/img/cjb.jpg" class="img-responsive" > CHU JEONG BEOM
+              </h2>
+              <h3 class="post-subtitle">일본어창의융합학부</h3>
+             <p>
+              	PART
+              <br>	
+              	<li>Web Application : Support</li>
+              	<li>Android Application : Support</li>
+             </p>
+          </div>  
+          <hr>
+          
+    	<div class="post-preview">
+              <h2 class="post-title">
+                <img src="./Resources/img/leb.jpg" class="img-responsive" > LEE EUN BIN
+              </h2>
+              <h3 class="post-subtitle">법 경찰학부</h3>
+              <p>
+              	PART
+              <br>	
+              	<li>Web Application : Back-end</li>
+              	<li>Android Application : AI, IOT</li>
+             </p>
+          </div>  
+          <hr> -->

@@ -48,7 +48,10 @@
 
     <!-- Custom styles for this template -->
     <link href="./Resources/css/clean-blog.min.css" rel="stylesheet">
-
+	
+	 <!-- font -->
+  <link href='http://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+  <link href="./Resources/css/customFont.css" rel='stylesheet'>
   </head>
   
   <body>

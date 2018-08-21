@@ -56,7 +56,11 @@ if(session.getAttribute("username")!=null){
 
     <!-- Custom styles for this template -->
     <link href="./Resources/css/clean-blog.min.css" rel="stylesheet">
-
+	
+	 <!-- font -->
+  <link href='http://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
+  <link href="./Resources/css/customFont.css" rel='stylesheet'>
+	
   </head>
   
   <body>
@@ -130,7 +134,7 @@ if(session.getAttribute("username")!=null){
  <div class="container">
  <table class="table table-bordered"> 
     <tr align="center" valign="middle"> 
-        <td colspan="5">제작 과정</td> 
+        <td colspan="5"><k1>제작 과정</k1></td> 
     </tr>  
     <tr> 
         <td style="font-family:돋움;font-size:12" height="16"> 
@@ -168,7 +172,7 @@ if(session.getAttribute("username")!=null){
     <tr align="center" valign="middle"> 
         <td colspan="5"> 
             <font size=2> 
-                <%-- <a href="./BoardReplyAction.bo?num=<%=board.getBOARD_NUM() %>">[답변]</a>  --%>
+                <a href="./BoardReplyAction.bo?num=<%=board.getBOARD_NUM() %>">[답변]</a> 
                <%if(username!=null && username.equals("admin")){ %> 
                 <a href="./BoardModify.bo?num=<%=board.getBOARD_NUM() %>">[수정]</a>                 
                 <a href="./BoardDelete.bo?num=<%=board.getBOARD_NUM() %>">[삭제]</a> 

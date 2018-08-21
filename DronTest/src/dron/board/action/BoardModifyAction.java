@@ -21,7 +21,7 @@ public class BoardModifyAction implements Action{
         BoardBean boarddata = new BoardBean(); 
 
         boolean usercheck=boarddao.isBoardWriter(num, id);         
-        /*if(!(id.equals("admin"))){ 
+        if(!(id.equals("admin"))){ 
             if(usercheck==false){ 
                 response.setContentType("text/html;charset=euc-kr"); 
                 PrintWriter out = response.getWriter(); 
@@ -32,7 +32,7 @@ public class BoardModifyAction implements Action{
                 out.close(); 
                 return null; 
             } 
-        }*/         
+        }         
         try{         
             boarddata.setBOARD_NUM(num); 
             boarddata.setBOARD_SUBJECT(request.getParameter("BOARD_SUBJECT")); 

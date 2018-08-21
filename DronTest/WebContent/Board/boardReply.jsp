@@ -2,14 +2,21 @@
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@page import="dron.board.db.BoardBean"%> 
-<%@ page language="java" contentType="text/html; charset=EUC-KR"%> 
+<%@ page language="java" contentType="text/html; charset=EUC-KR" %> 
+<%BoardBean board = (BoardBean)request.getAttribute("boarddata"); %>
+
 <% 
-    String username=(String)session.getAttribute("username"); 
-    BoardBean board=(BoardBean)request.getAttribute("boarddata"); 
-%> 
+String username=null; 
+if(session.getAttribute("username")!=null){ 
+	username=(String)session.getAttribute("username"); 
+} 
+%>
+
+
 <html lang="en">
 
- <head>
+  <head>
+	
 <script>
 		function btn() {
 			<%if(session.getAttribute("username") == null) { %>
@@ -49,11 +56,10 @@
 
     <!-- Custom styles for this template -->
     <link href="./Resources/css/clean-blog.min.css" rel="stylesheet">
-
+	
 	 <!-- font -->
   <link href='http://fonts.googleapis.com/earlyaccess/jejugothic.css' rel='stylesheet' type='text/css'>
   <link href="./Resources/css/customFont.css" rel='stylesheet'>
-
   </head>
   
   <body>
@@ -61,7 +67,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="./main.dron">3조 조미정</a>
+        <a class="navbar-brand" href="./main.dron"">3조 조미정</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -119,62 +125,54 @@
 	
 
 <!-- ---------------------------------------------------------------------------------------------------------- -->
-
-	<!-- 게시판 등록 --> 
 <div class="container">
-<form  name="boardform" action="./BoardAddAction.bo" method="post" enctype="multipart/form-data"> 
-<input type="hidden" name="BOARD_NAME" value="<%=username %>"> 
+<form name="boardform" action="./BoardReplyView.bo" method="post" > 
+    <input type="hidden" name="BOARD_NUM" value="<%=board.getBOARD_NUM() %>"> 
+    <input type="hidden" name="BOARD_RE_REF" value="<%=board.getBOARD_RE_REF() %>"> 
+    <input type="hidden" name="BOARD_RE_LEV" value="<%=board.getBOARD_RE_LEV() %>"> 
+    <input type="hidden" name="BOARD_RE_SEQ" value="<%=board.getBOARD_RE_SEQ() %>"> 
+    <input type="hidden" name="BOARD_NAME" value="<%=username%>"> 
+
 <table class="table table-bordered"> 
     <tr align="center" valign="middle"> 
-        <td colspan="5"> <strong>제작 과정</td> 
-    </tr> 
-    <tr> 
-        <td style="font-family:돋움; font-size:12" height="16"> <!-- 돋움체 많이봐서 소름 돋움 -->
-            <div align="center">글쓴이</div> 
-        </td> 
-        <td> 
-            <%=username %> 
-        </td> 
-    </tr> 
-        <tr> 
-        <td style="font-family:돋움; font-size:12" height="16"> 
-            <div align="center">제 목</div> 
-        </td> 
-        <td> 
-            <input name="BOARD_SUBJECT" type="text" size="50" maxlength="100" value="" class="form-control"/> <!-- class="form-control" 테이블 크게에 맞게 맞춰줌 -->
-        </td>         
+        <td colspan="5">REPLY</td>     
     </tr> 
     <tr> 
         <td style="font-family:돋움; font-size:12" height="16"> 
-            <div align="center">내 용</div> 
+        <div align="center">글쓴이</div></td>     
+        <td><%=username %></td>     
+    </tr> 
+    <tr> 
+        <td style="font-family:돋움; font-size:12" height="16"> 
+            <div align="center">제목</div> 
         </td> 
         <td> 
-            <textarea name="BOARD_CONTENT" cols="67" rows="15" class="form-control"></textarea>             
+            <input name="BOARD_SUBJECT" type="text" size="50" maxlength="100" value="Re:<%=board.getBOARD_SUBJECT()%>" class="form-control"/> <!-- class="form-control" 테이블 크게에 맞게 맞춰줌 -->
+        </td>                     
         </td>         
     </tr> 
     <tr> 
-        <td style="font-family:돋움 ; font-size:12"> 
-            <div align="center">파일첨부</div> 
+        <td style="font-family:돋움; font-size:12"><div align="center" >내용</div></td> 
+        <td> 
+            <textarea name="BOARD_CONTENT" cols="67" rows="15" align="left" class="form-control">RE:</textarea> 
         </td> 
-        <td style="font-family:돋움 ; font-size:12"> 
-            <input name="BOARD_FILE" type="file"/> 
-        </td>     
     </tr> 
-     
-    <tr bgcolor="cccccc"> 
-        <td colspan="2" style="height:1px;"></td> 
+    <tr> 
+        <td style="font-family:돋움; font-size:12"><div align="center">비밀번호</div></td> 
+        <td><input name="BOARD_PASS" type="password"></td> 
     </tr> 
-     
-    <tr><td colspan="2">&nbsp;</td></tr> 
-    <tr align="center" valign="middle"> 
+    <tr bgcolor="cccccc"> <td colspan="2" style="height:1px"> </td> </tr> 
+    <tr><td colspan="2"> &nbsp;</td></tr> 
+    <tr align="center" valign="middel"> 
         <td colspan="5"> 
             <a href="javascript:boardform.submit()">[등록]</a>&nbsp;&nbsp; 
-            <a href="javascript:history.go(-1)">[뒤로]</a>             
+            <a href ="javascript:history.go(-1)">[뒤로]</a> 
         </td> 
-    </tr> 
+    </tr>     
 </table> 
 </form> 
 </div>
+
 <!-- ---------------------------------------------------------------------------------------------- -->
 
 <!-- Footer -->
@@ -224,4 +222,3 @@
   </body>
 
 </html>
-
