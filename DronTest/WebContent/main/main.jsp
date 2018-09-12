@@ -167,14 +167,14 @@ if(session.getAttribute("username")!=null){
                   <div class="feature-item">
                     <i class="icon-screen-smartphone text-primary"></i>
                     <h3>Android</h3>
-                    <p class="text-muted"><k1>설명 들어갈 공간</k1></p>
+                    <p class="text-muted"><k1>Version : Nougat</k1></p>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-camera text-primary"></i>
                     <h3>AI</h3>
-                    <p class="text-muted"><k1>설명 들어갈 공간</k1></p>
+                    <p class="text-muted"><k1>Google Assistant 기반으로 음성인식을 통한 명령</k1></p>
                   </div>
                 </div>
               </div>
@@ -183,14 +183,14 @@ if(session.getAttribute("username")!=null){
                   <div class="feature-item">
                     <i class="icon-present text-primary"></i>
                     <h3>Drone</h3>
-                    <p class="text-muted"><k1>설명 들어갈 공간</k1></p>
+                    <p class="text-muted"><k1>DJI Tello SDK와 Python 기반 코드를 안드로이드 방식으로 재해석</k1></p>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-lock-open text-primary"></i>
                     <h3>IOT</h3>
-                    <p class="text-muted"><k1>설명 들어갈 공간</k1></p>
+                    <p class="text-muted"><k1>UDP 통신을 이용하여 스마트폰에서 드론에 명령 전달</k1></p>
                   </div>
                 </div>
               </div>
