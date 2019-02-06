@@ -21,6 +21,9 @@ public class DynamicBeat extends JFrame{
 		setVisible(true); //창이 보이도록, 출력이 되도록
 		
 		introBackground = new ImageIcon(Main.class.getResource("../images/introBackground.jpg")).getImage();
+		
+		Music introMusic = new Music("introMusic.mp3", true);
+		introMusic.start();
 	}
 	
 	//반복해서 화면을 띄움
