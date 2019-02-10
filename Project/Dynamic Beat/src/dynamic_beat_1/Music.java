@@ -7,8 +7,9 @@ import java.io.FileInputStream;
 import javazoom.jl.player.Player;
 
 public class Music extends Thread {
-	private Player player;	//자바줌 라이브러리
-	private boolean isLoop; //무한 반복 설정
+	
+	private Player player;
+	private boolean isLoop;
 	private File file;
 	private FileInputStream fis;
 	private BufferedInputStream bis;
@@ -24,9 +25,9 @@ public class Music extends Thread {
 			System.out.println(e.getMessage());
 		}
 	}
-
+	
 	public int getTime() {
-		if(player == null)
+		if (player == null)
 			return 0;
 		return player.getPosition();
 	}
@@ -37,7 +38,6 @@ public class Music extends Thread {
 		this.interrupt();
 	}
 	
-	/*쓰레드*/
 	@Override
 	public void run() {
 		try {
@@ -46,11 +46,10 @@ public class Music extends Thread {
 				fis = new FileInputStream(file);
 				bis = new BufferedInputStream(fis);
 				player = new Player(bis);
-			}while(isLoop);
+			} while (isLoop);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 	}
-	
-	
+
 }
