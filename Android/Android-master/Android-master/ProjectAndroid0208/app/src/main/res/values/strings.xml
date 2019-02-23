@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">근처에\n뭐있지</string>
+    <string name="cat">카  테  고  리</string>
+    <string name="mem">메    모    장</string>
+    <string name="dev">개    발    자</string>
+    <string name="exi">종            료</string>
+    <string name="res">음    식    점</string>
+    <string name="con">편    의    점</string>
+    <string name="atm">A     T     M</string>
+    <string name="bak">빵        집</string>
+    <string name="sub">지    하    철</string>
+    <string name="pos">우    체    국</string>
+    <string name="hos">병        원</string>
+    <string name="lib">도    서    관</string>
+    <string name="ban">은        행</string>
+    <string name="cof">카        페</string>
+    <string name="bus">정    류    장</string>
+    <string name="aco">숙        박</string>
+    <string name="gas">주    유    소</string>
+    <string name="mov">영    화    관</string>
+    <string name="spa">스        파</string>
+    <string name="lau">세    탁    소</string>
+    <string name="bac">뒤 로 가 기..</string>
+    <string name="memo_list">메 모 목 록</string>
+    <string name="add_notes">메 모 추 가</string>
+    <string name="new_memo">새 메모</string>
+    <string name="exit">닫기</string>
+    <string name="check">확인</string>
+    <string name="cancel">취소</string>
+    <string name="hint">메모 입력...</string>
+    <string name="sav">저장</string>
+    <string name="modify">수정</string>
+    <string name="delete">삭제</string>
+    <string name="view_memo">메 모 보 기</string>
+
+</resources>

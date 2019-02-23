@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">What is\naround here?</string>
+    <string name="cat">Category</string>
+    <string name="mem">Notepad</string>
+    <string name="dev">Developer</string>
+    <string name="exi">Exit</string>
+    <string name="res">Restaurant</string>
+    <string name="con">Convenience store</string>
+    <string name="atm">A   T   M</string>
+    <string name="bak">Bakery</string>
+    <string name="sub">Subway Station</string>
+    <string name="pos">Post Office</string>
+    <string name="hos">Hospital</string>
+    <string name="lib">Library</string>
+    <string name="ban">Bank</string>
+    <string name="cof">Cafe</string>
+    <string name="bus">Bus Station</string>
+    <string name="aco">Accommodation</string>
+    <string name="gas">Gas Station</string>
+    <string name="mov">Movie Theater</string>
+    <string name="spa">Spa</string>
+    <string name="lau">Laundry</string>
+    <string name="bac">Back..</string>
+    <string name="memo_list">List of Notes</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="new_memo">New Note</string>
+    <string name="close">Close</string>
+    <string name="check">Check</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint">Enter a note...</string>
+    <string name="sav">Save</string>
+    <string name="modify">Modify</string>
+    <string name="delete">Delete</string>
+    <string name="view_memo">View Note</string>
+
+</resources>

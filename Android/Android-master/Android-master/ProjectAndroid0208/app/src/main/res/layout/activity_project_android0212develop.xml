@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#D5D5D5"
+    tools:context="com.example.i312_04.projectandroid0208.ProjectAndroid0212develop">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="@drawable/rounded3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Developer"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:text="만 든 이 : 김도훈, 김기범, 김선영, 조성규"/>
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:text="어플 이름 : 근처에 뭐있지?" />
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:text="어플 기능 : 현재 위치를 기준으로 3km 이내의
+                  사용자가 선택한 장소를 검색해준다." />
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:text="개발 목적 : 낯선 곳에서 생활을 시작하는 대학생
+                  들에게 도움을 주기 위해" />
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:text="Ver.0.1.1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/backmain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:text="@string/bac"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:background="@drawable/button2"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

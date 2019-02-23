@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="images">
+        <item>@drawable/takeoff2</item>
+        <item>@drawable/land</item>
+        <item>@drawable/up</item>
+        <item>@drawable/down</item>
+        <item>@drawable/forward</item>
+        <item>@drawable/back</item>
+        <item>@drawable/left</item>
+        <item>@drawable/right</item>
+        <item>@drawable/cw</item>
+        <item>@drawable/ccw</item>
+        <item>@drawable/joystick</item>
+        <item>@drawable/mic</item>
+    </integer-array>
+
+    <integer-array name="colors">
+        <item>@color/roseStart</item>
+        <item>@color/roseEnd</item>
+        <item>@color/blueStart</item>
+        <item>@color/blueEnd</item>
+        <item>@color/greenStart</item>
+        <item>@color/greenEnd</item>
+        <item>@color/purpleStart</item>
+        <item>@color/purpleEnd</item>
+    </integer-array>
+
+    <string-array name="explain">
+        <item>Take Off</item>
+        <item>Landing</item>
+        <item>Up</item>
+        <item>Down</item>
+        <item>Forward</item>
+        <item>Backward</item>
+        <item>Left</item>
+        <item>Right</item>
+        <item>Turn Right</item>
+        <item>Turn Left</item>
+        <item>Joystick</item>
+        <item>AI Mode</item>
+    </string-array>
+
+</resources>

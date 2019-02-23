@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="major">
+        <item>ACCT Accounting (회계)</item>
+
+        <item>AFAM African American Studies (미 흑인의 역사와 문화를 공부하는 전공)</item>
+
+        <item>AFST African Studies (미국 문화)</item>
+
+        <item>AKKD Akkadian (아케디아어 전공  옛 메소포타미아의 언어)</item>
+
+        <item>AMST American Studies (미국 역사와 문화)</item>
+
+        <item>AMTH Applied Mathematics (응용 수학)</item>
+
+        <item>ANTH Anthropology (인류학)</item>
+
+        <item>APHY Applied Physics (물리)</item>
+
+        <item>ARBC Arabic (아랍어 전공)</item>
+
+        <item>ARCG Archaeological Studies (고고학)</item>
+
+        <item>ARCH Architecture (건축학)</item>
+
+        <item>ART Art (미술)</item>
+
+        <item>ASTR Astronomy (우주역학)</item>
+
+        <item>ENG Biomedical Engineering (생명공학)</item>
+
+        <item>CENG Chemical Engineering (화학공학)</item>
+
+        <item>CGSC Cognitive Science (인식 과학)</item>
+
+        <item>CHEM Chemistry (화학)</item>
+
+        <item>CHLD Child Study Center (어린이 교육)</item>
+
+        <item>CHNS Chinese (중국어)</item>
+
+        <item>CLCV Classical Civilization (그리스와 라틴 전공)</item>
+
+        <item>CPTC Coptic (이집트어)</item>
+
+        <item>CPSC Computer Science (컴퓨터 공학)</item>
+
+        <item>CZEC Czech (옛 체코슬로바키아의 말)</item>
+
+        <item>EALL East Asian Languages and Literatures (동양 언어와 문학)</item>
+
+        <item>EAST East Asian Studies (동양학)</item>
+
+        <item>ECON Economics (경제학)</item>
+
+        <item>EENG Electrical Engineering (전기공학)</item>
+
+        <item>EGYP Egyptian (이집트 언어)</item>
+
+        <item>ENAS Engineering and Applied Science (공학과 응용과학)</item>
+
+        <item>ENGL English Language and Literature (영어학과 영문학)</item>
+
+        <item>ENVE Environmental Engineering (환경공학)</item>
+
+        <item>EVST Environmental Studies (환경학)</item>
+
+        <item>FILM Film Studies (영화학)</item>
+
+        <item>FREN French (불어)</item>
+
+        <item>GMAN Germanic Languages and Literatures (독일어와 독일문학)</item>
+
+        <item>GMST German Studies (독일학)</item>
+
+        <item>GREK Greek (고대 그리스어)</item>
+
+        <item>HEBR Hebrew (히브리어)</item>
+
+        <item>HIST History (역사)</item>
+
+        <item>HNDI Hindi (힌두어)</item>
+
+        <item>HSAR History of Art (미술 역사)</item>
+
+        <item>HSHM History of Science, History of Medicine (과학과 의학역사)</item>
+
+        <item>HUMS Humanities (인문학)</item>
+
+        <item>INDN Indonesian (인도네시아어)</item>
+
+        <item>INTS International Studies (국제학)</item>
+
+        <item>ITAL Italian (이탈리아 어)</item>
+
+        <item>JAPN Japanese (일본어)</item>
+
+        <item>JDST Judaic Studies (유대문화)</item>
+
+        <item>KREN Korean (한국어)</item>
+
+        <item>LAST Latin American Studies (남미 문화)</item>
+
+        <item>LATN Latin (라틴어)</item>
+
+        <item>LING Linguistics (언어학)</item>
+
+        <item>LITR Literature (문학)</item>
+
+        <item>MATH Mathematics (수학)</item>
+
+        <item>MCDB Molecular, Cellular, and Developmental Biology (분자생물학)</item>
+
+        <item>MENG Mechanical Engineering (기계물리)</item>
+
+        <item>MGRK Modern Greek (근대 그리스어)</item>
+
+        <item>MUSI Music (음악)</item>
+
+        <item>NELC Near Eastern Languages and Civilizations (메소포타미아 언어와 문화)</item>
+
+        <item>PERS Persian (페르시아어)</item>
+
+        <item>PHIL Philosophy (철학)</item>
+
+        <item>PHYS Physics (물리)</item>
+
+        <item>PLSC Political Science (정치학)</item>
+
+        <item>PORT Portuguese (포르투갈어)</item>
+
+        <item>PSYC Psychology (심리학)</item>
+
+        <item>RLST Religious Studies (종교학)</item>
+
+        <item>RNST Renaissance Studies (레네상스)</item>
+
+        <item>RSEE Russian and East European Studies (러시아와 동유럽 문화)</item>
+
+        <item>RUSS Russian (러시아어)</item>
+
+        <item>SBCR Serbian and Croatian (세르비아와 크로에시아 어)</item>
+
+        <item>SCIE Science (과학)</item>
+
+        <item>SLAV Slavic Languages and Literatures (슬라빅 어)</item>
+
+        <item>SOCY Sociology (사회학)</item>
+
+        <item>SPAN Spanish (스페인어)</item>
+
+        <item>SPEC Special Divisional MajorSTAT Statistics (통계학)</item>
+
+        <item>STCY Study of the City (도시학)</item>
+
+        <item>SWAH Kiswahili (아프리카의 언어인 kiswahili)</item>
+
+        <item>TAML Tamil (쓰리랑카와 인디아의 한 지방 언어)</item>
+
+        <item>THST Theater Studies (연극학)</item>
+
+        <item>TKSH Turkish (터키어)</item>
+
+        <item>TPRP Teacher Preparation (사범대학)</item>
+
+        <item>VIET Vietnamese (베트남 어)</item>
+
+        <item>YORU Yoruba (아프리카의 지방인 요류바 언어)</item>
+
+        <item>ZULU isiZulu (아프리카의 지방인 zulu 언어)</item>
+
+        ​
+    </string-array>
+</resources>

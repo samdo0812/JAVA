@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">近くに何があった。</string>
+    <string name="cat">カテゴリ</string>
+    <string name="mem">メモ帳</string>
+    <string name="dev">ディベロッパー</string>
+    <string name="exi">終了</string>
+    <string name="res">食堂</string>
+    <string name="con">コンビニ</string>
+    <string name="atm">ATM</string>
+    <string name="bak">パン屋</string>
+    <string name="sub">地下鉄</string>
+    <string name="pos">郵便局</string>
+    <string name="hos">病院</string>
+    <string name="lib">図書館</string>
+    <string name="ban">銀行</string>
+    <string name="cof">カフェ</string>
+    <string name="bus">バス停</string>
+    <string name="aco">宿屋</string>
+    <string name="gas">ガソリンスタンド</string>
+    <string name="mov">映画館</string>
+    <string name="spa">スパ</string>
+    <string name="lau">クリーニング店</string>
+    <string name="bac">戻る</string>
+    <string name="memo_list">メモリスト</string>
+    <string name="add_notes">メモ追加</string>
+    <string name="new_memo">新しいメモ</string>
+    <string name="exit">閉じる</string>
+    <string name="check">確認</string>
+    <string name="cancel">取り消し</string>
+    <string name="hint">内容･･･</string>
+    <string name="sav">保存 </string>
+    <string name="modify">修訂</string>
+    <string name="delete">削除</string>
+    <string name="view_memo">メモ見る</string>
+
+</resources>

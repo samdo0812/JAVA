@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity"
+    android:background="@layout/splash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="9"
+        android:rowCount="10">
+
+        <ImageButton
+            android:id="@+id/takeoff"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:onClick="takeoff"
+            app:srcCompat="@drawable/takeoff2" />
+
+        <ImageButton
+            android:id="@+id/landing"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="8"
+            android:layout_row="0"
+            android:onClick="landing"
+            app:srcCompat="@drawable/land" />
+
+        <ImageButton
+            android:id="@+id/forward"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:onClick="forward"
+            app:srcCompat="@drawable/forward" />
+
+        <ImageButton
+            android:id="@+id/left"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:onClick="left"
+            app:srcCompat="@drawable/left" />
+
+        <ImageButton
+            android:id="@+id/back"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:onClick="back"
+            app:srcCompat="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/right"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="2"
+            android:layout_row="6"
+            android:onClick="right"
+            app:srcCompat="@drawable/right" />
+
+        <ImageButton
+            android:id="@+id/up"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="8"
+            android:layout_row="4"
+            android:layout_rowSpan="2"
+            android:onClick="up"
+            app:srcCompat="@drawable/up" />
+
+        <ImageButton
+            android:id="@+id/down"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="8"
+            android:layout_row="7"
+            android:layout_rowSpan="2"
+            android:onClick="down"
+            app:srcCompat="@drawable/down" />
+
+        <ImageButton
+            android:id="@+id/cw"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="55dp"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:onClick="cw"
+            app:srcCompat="@drawable/cw" />
+
+        <ImageButton
+            android:id="@+id/ccw"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="88dp"
+            android:layout_height="54dp"
+            android:layout_column="8"
+            android:layout_row="3"
+            android:onClick="ccw"
+            app:srcCompat="@drawable/ccw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_row="4"
+            android:layout_rowSpan="3"
+            android:text="AI Drone"
+            android:textSize="30dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="7"
+            android:layout_row="6"
+            android:clickable="true"
+            android:backgroundTint="#ffffff"
+            android:onClick="ai"
+            app:srcCompat="@drawable/mic" />
+
+    </GridLayout>
+
+</LinearLayout>
