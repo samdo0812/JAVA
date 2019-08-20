@@ -9,6 +9,11 @@ public class Code05 {
 		//allocate memory for 5 indices
 		grades = new int[5];
 		
+		/*
+		double[] array = new double[100];
+		char[] word = new char[20];
+		*/
+		
 		//assign some values to the array
 		grades[0] = 100;
 		grades[1] = 76;
@@ -22,5 +27,6 @@ public class Code05 {
 		System.out.println(grades[2]);
 		System.out.println(grades[3]);
 		System.out.println(grades[4]);
+
 	}
 }
