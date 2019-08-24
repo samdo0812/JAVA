@@ -24,8 +24,8 @@ public class Code09 {
 		for (int i = n-2; i >= 0; i--)
 		{
 			data[i+1] = data[i];
-			data[0] = tmp;
 		}
+		data[0] = tmp;
 		
 		for (int i = 0; i < n; i++)
 		{
