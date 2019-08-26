@@ -5,9 +5,9 @@ public class Code09 {
 	public static void main(String[] args) {
 		
 		/*
-		nê°œì˜ ì •ìˆ˜ë¥¼ ìž…ë ¥ë°›ì•„ ìˆœì„œëŒ€ë¡œ ë°°ì—´ì— ì €ìž¥í•œë‹¤. 
-		ê·¸ëŸ°ë‹¤ìŒ ëª¨ë“  ì •ìˆ˜ë“¤ì„ í•œ ì¹¸ì”© ì˜¤ë¥¸ìª½ìœ¼ë¡œ shiftí•˜ë¼
-		ë§ˆì§€ë§‰ ì •ìˆ˜ëŠ” ë°°ì—´ì˜ ì²«ì¹¸ìœ¼ë¡œ ì´ë™í•˜ë¼
+		n°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Þ¾Æ ¼ø¼­´ë·Î ¹è¿­¿¡ ÀúÀåÇÑ´Ù. 
+		±×·±´ÙÀ½ ¸ðµç Á¤¼öµéÀ» ÇÑ Ä­¾¿ ¿À¸¥ÂÊÀ¸·Î shiftÇÏ¶ó
+		¸¶Áö¸· Á¤¼ö´Â ¹è¿­ÀÇ Ã¹Ä­À¸·Î ÀÌµ¿ÇÏ¶ó
 		*/
 		
 		Scanner scan = new Scanner(System.in);
