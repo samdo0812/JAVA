@@ -95,7 +95,7 @@ public class IndexMaker {
 		while(i < str.length() && !Character.isLetter(str.charAt(i)))	//while i-th character is not letter
 		{
 			i++;
-		}
+		}    
 
 		while(j >=0 && !Character.isLetter(str.charAt(j)))	//while i-th character is not letter
 		{
