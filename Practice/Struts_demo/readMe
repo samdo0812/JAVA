@@ -1,0 +1,18 @@
+Maven pom.xml
+
+<dependencies>
+mvnrepository
+->java servlet api
+->struts core
+->struts taglib
+
+clean
+
+struts-config 1.x dtd
+doctype copy
+<struts-config>
+<form-beans>
+.
+.
+.
+</struts-config>
