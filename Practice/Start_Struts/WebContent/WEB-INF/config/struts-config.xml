@@ -7,5 +7,15 @@
 <struts-config>
 	<action-mappings>
 		<action path="/Welcome" forward="/Welcome.jsp" />
+		<!-- 로그인 폼으로 이동하는 Forward 액션 -->
+		<action path="/login1/logInForm" forward="/login1/logInForm.jsp"/>
+        <!-- 로그인을 실행하는 Action -->        
+        <action path="/login1/logIn"
+                type="strutsguide.actions.Login1Action"
+                validate="false">
+        <!-- 로그인을 수행한 뒤에 성공/실패 표시를 위해 이동할 View 페이지 -->
+              <forward name="success" path="/login1/logInSuccess.jsp" redirect="true" />
+              <forward name="fail" path="/login1/logInFail.jsp" />
+        </action>
 	</action-mappings>
 </struts-config>

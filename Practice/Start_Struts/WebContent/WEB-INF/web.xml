@@ -16,7 +16,8 @@
 		<init-param>
 			<param-name>detail</param-name>
 			<param-value>2</param-value>
-		</init-param>    <!-- ActionServlet은 이 웹 어플리케이션 시작시에 함께 시작되어야 한다. -->
+		</init-param>    
+		<!-- ActionServlet은 이 웹 어플리케이션 시작시에 함께 시작되어야 한다. -->
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<!-- “*.do”로 끝나는 모든 URL 패턴은 ActionServlet을 거쳐서 수행되어야 한다. -->
@@ -25,7 +26,7 @@
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 	<!-- 웹으로 접속한 사용자가 JSP 파일로 직접 접근할 수 없게 한다. -->
-	<security-constraint>
+<!-- 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>PreventViewingJSPs</web-resource-name>
 			<description>웹으로 접속한 사용자가 JSP파일로 직접 접근할 수 없도록 한다.</description>
@@ -36,5 +37,5 @@
 		<auth-constraint>
 			<role-name></role-name>
 		</auth-constraint>
-	</security-constraint>
+	</security-constraint> -->
 </web-app>
