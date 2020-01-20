@@ -15,13 +15,16 @@ public class Notebook extends Computer {
 		그렇지 않을 경우에는 자동으로 기본 생성자를 호출한다.
 		*/
 		super(man, proc, ram, disk, speed);
-		manufacturer = man;
-		processor = proc;
-		ramSize = ram;
-		diskSize = disk;
-		processorSpeed = speed;
 		screenSize = screen;
 		this.weight = weight;
+	}
+	
+	@Override
+	public String toString() {
+		String result = super.toString() +
+						"\nScreen Size: " + screenSize + " inches" +
+						"\nWeight: " + weight + " kg";
+		return result;
 	}
 	
 	public static void main(String[] args) {
