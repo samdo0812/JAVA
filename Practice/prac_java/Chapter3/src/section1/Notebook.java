@@ -28,9 +28,14 @@ public class Notebook extends Computer {
 	}
 	
 	public static void main(String[] args) {
+		
 		Notebook test = new Notebook("LG", "i7", 16, 1000, 3.2, 15, 1);
-
 		System.out.println(test.computePower());
 		System.out.println(test.toString());
+		
+		System.out.println("=============================================");
+		Computer test2 = new Notebook("LG", "i7", 16, 1000, 3.2, 15, 1);
+		System.out.println(test2.toString());	//static binding vs dynamic binding
+												//자바에서는 동적 바인딩이 일어난다. (이 경우에 일어나는 toString 메소드는 notBook의 toString)
 	}
 }
