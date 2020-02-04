@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Scheduler {
 	
+	public Event[] events = new Event[100];
+	public int n = 0;
 	
 	public void processCommand() {
 		Scanner scan = new Scanner(System.in);
