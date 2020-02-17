@@ -28,6 +28,25 @@ public class Test { //subclass of Object
 			System.out.println("no");
 		}
 		
+		//wrapper
+		//1
+		Object [] array = new Object[100];
+		
+		int a = 20;
+		//Integer age = new Integer(a);
+		//array[0] = age;
+		//int b = age.intValue();
+		
+		
+		array[0] = a; //auto boxing
+		int b = (Integer)array[0]; //auto unboxing
+		
+		System.out.println(b);
+		
+		//2
+		String str = "1234";
+		int c = Integer.parseInt(str);
+		System.out.println(c);
 	}
 	
 }
